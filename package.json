@@ -1,0 +1,26 @@
+{
+  "name": "gas-webapp-boilerplate",
+  "version": "1.0.0",
+  "description": "Google Apps Script Web App Boilerplate",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "initialize": "mkdirp dist",
+    "prefetch:manifest": "npm-run-all initialize",
+    "fetch:manifest": "clasp pull",
+    "postfetch:manifest": "cpx ./dist/appsscript.json ./",
+    "prebuild": "npm-run-all initialize",
+    "build": "lerna run build",
+    "postbuild": "cpx ./backend/dist/**/* ./dist && cpx ./appsscript.json ./dist",
+    "upload": "clasp push",
+    "deploy": "npm-run-all build upload"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.3.0",
+    "cpx": "^1.5.0",
+    "lerna": "^3.20.2",
+    "mkdirp": "^1.0.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
