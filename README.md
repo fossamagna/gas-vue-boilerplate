@@ -5,7 +5,7 @@
 ## Getting Started
 
 ```sh
-git clone https://github.com/fossamagna/gas--webapp-boilerplate.git my-awesome-project
+git clone https://github.com/fossamagna/gas-vue-boilerplate.git my-awesome-project
 cd my-awesome-project
 rm -rf .git && git init # Initialize your project's git repository
 yarn # Install dependencies
