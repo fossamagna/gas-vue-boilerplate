@@ -4,6 +4,7 @@
   "description": "Google Apps Script Web App Boilerplate",
   "license": "MIT",
   "scripts": {
+    "preclean": "lerna run clean",
     "clean": "rimraf dist",
     "initialize": "mkdirp dist",
     "prefetch:manifest": "npm-run-all initialize",
@@ -11,7 +12,7 @@
     "postfetch:manifest": "cpx ./dist/appsscript.json ./",
     "prebuild": "npm-run-all initialize",
     "build": "lerna run build",
-    "postbuild": "cpx ./backend/dist/**/* ./dist && cpx ./appsscript.json ./dist",
+    "postbuild": "cpx ./backend/dist/**/* ./dist && cpx ./appsscript.json ./dist && cpx ./frontend/dist/index.html ./dist",
     "upload": "clasp push",
     "deploy": "npm-run-all build upload"
   },

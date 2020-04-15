@@ -1,7 +1,8 @@
 {
   "npmClient": "yarn",
   "packages": [
-    "backend"
+    "backend",
+    "frontend"
   ],
   "version": "1.0.0"
 }
