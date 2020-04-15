@@ -1651,6 +1651,11 @@ commander@^3.0.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-3.0.2.tgz#6837c3fb677ad9933d1cfba42dd14d5117d6b39e"
   integrity sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==
 
+commander@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-5.0.0.tgz#dbf1909b49e5044f8fdaf0adc809f0c0722bdfd0"
+  integrity sha512-JrDGPAKjMGSP1G0DUoaceEJ3DZgAfr/q6X7FVk4+U5KxUSKviYGM2k6zWkfyyBHy5rAtzgYJFa1ro2O9PtoxwQ==
+
 commander@~2.20.3:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -2060,6 +2065,11 @@ dotf@^1.2.0:
   dependencies:
     graceful-fs "^4.2.3"
     jsonfile "^6.0.0"
+
+dts-dom@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/dts-dom/-/dts-dom-3.6.0.tgz#0e8beaf6240e699d623bf4d7dcf0e6216222459a"
+  integrity sha512-on5jxTgt+A6r0Zyyz6ZRHXaAO7J1VPnOd6+AmvI1vH440AlAZZNc5rUHzgPuTjGlrVr1rOWQYNl7ZJK6rDohbw==
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -2703,7 +2713,7 @@ glob2base@^0.0.12:
   dependencies:
     find-index "^0.1.1"
 
-glob@^7.0.5, glob@^7.1.1, glob@^7.1.3, glob@^7.1.4:
+glob@^7.0.5, glob@^7.1.1, glob@^7.1.3, glob@^7.1.4, glob@^7.1.6:
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   integrity sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==
@@ -2750,6 +2760,17 @@ google-p12-pem@^2.0.0:
   integrity sha512-S4blHBQWZRnEW44OcR7TL9WR+QCqByRvhNDZ/uuQfpxywfupikf/miba8js1jZi6ZOGv5slgSuoshCWh6EMDzg==
   dependencies:
     node-forge "^0.9.0"
+
+google-script-dts-generator@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/google-script-dts-generator/-/google-script-dts-generator-1.0.2.tgz#119537f7f6bdd168329227d3433fe2440f110895"
+  integrity sha512-2QUL5aZoR8T7lpCafL0TIjzbZaq189BLIb817Z/xHBaC0nWafbeIW47Q6n7mSLaZCDlgvTAd9utMvjrVHYAaDA==
+  dependencies:
+    commander "^5.0.0"
+    dts-dom "^3.6.0"
+    glob "^7.1.6"
+    indent-string "^4.0.0"
+    typescript "^3.8.3"
 
 googleapis-common@^3.0.0:
   version "3.2.2"

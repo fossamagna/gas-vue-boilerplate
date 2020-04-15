@@ -6,6 +6,7 @@
   </div>
 </template>
 <script lang="ts">
+/// <reference path="../google.script.d.ts" />
 import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
@@ -17,10 +18,9 @@ export default class Echo extends Vue {
 
   echo() {
     const input = this.input;
-    // @ts-ignore
     google.script.run
       .withSuccessHandler((value: string) => this.message = value)
-      .withFailureHandler((e: Error) => console.error(e))
+      .withFailureHandler(e => console.error(e))
       .echo(input);
   }
 }

@@ -22,3 +22,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# generated d.ts file
+/src/google.script.d.ts
