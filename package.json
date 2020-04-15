@@ -13,6 +13,7 @@
     "prebuild": "npm-run-all initialize",
     "build": "lerna run build",
     "postbuild": "cpx ./backend/dist/**/* ./dist && cpx ./appsscript.json ./dist && cpx ./frontend/dist/index.html ./dist",
+    "test": "lerna run test",
     "upload": "clasp push",
     "deploy": "npm-run-all build upload"
   },
