@@ -4,6 +4,7 @@
   "description": "Google Apps Script Web App Boilerplate",
   "license": "MIT",
   "scripts": {
+    "postinstall": "lerna bootstrap",
     "preclean": "lerna run clean",
     "clean": "rimraf dist",
     "initialize": "mkdirp dist",
