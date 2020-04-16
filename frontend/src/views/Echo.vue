@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <input v-model="input">
+    <input v-model="input" />
     <button @click="echo">exec echo</button>
     <p>{{ message }}</p>
   </div>
@@ -11,15 +11,15 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class Echo extends Vue {
-  @Prop({ type: String, default: '' })
+  @Prop({ type: String, default: "" })
   private input!: string;
-  @Prop({ type: String, default: '' })
+  @Prop({ type: String, default: "" })
   private message!: string;
 
   echo() {
     const input = this.input;
     google.script.run
-      .withSuccessHandler((value: string) => this.message = value)
+      .withSuccessHandler((value: string) => (this.message = value))
       .withFailureHandler(e => console.error(e))
       .echo(input);
   }
