@@ -1,9 +1,15 @@
 <template>
-  <div class="about">
-    <input v-model="input" />
-    <button @click="echo">exec echo</button>
-    <p>{{ message }}</p>
-  </div>
+  <v-form>
+    <v-container>
+      <v-row>
+        <v-text-field v-model="input" />
+        <v-btn @click="echo">exec echo</v-btn>
+      </v-row>
+      <v-row>
+        <p>{{ message }}</p>
+      </v-row>
+    </v-container>
+  </v-form>
 </template>
 <script lang="ts">
 /// <reference path="../google.script.d.ts" />
