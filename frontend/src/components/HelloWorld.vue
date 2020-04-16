@@ -6,7 +6,7 @@
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
+        <h1 class="display-2 font-weight-bold mb-3">{{ msg }}</h1>
 
         <p class="subheading font-weight-regular">
           For help and collaboration with other Vuetify developers,
@@ -64,10 +64,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Prop } from "vue-property-decorator";
 
 @Component
 export default class HelloWorld extends Vue {
+  @Prop() private msg!: string;
   private ecosystem = [
     {
       text: "vuetify-loader",
