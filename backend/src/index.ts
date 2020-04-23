@@ -1,6 +1,6 @@
-global.echo = (message: string) => {
-  return message;
-};
+import echo from './echo';
+
+global.echo = echo;
 
 global.doGet = () => {
   return HtmlService
