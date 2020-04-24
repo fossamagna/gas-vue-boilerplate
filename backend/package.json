@@ -19,17 +19,17 @@
     "test": "npm-run-all cp:* test:*"
   },
   "devDependencies": {
-    "@types/assert": "^1.4.6",
-    "@types/google-apps-script": "^1.0.11",
-    "assert": "^2.0.0",
-    "cpx": "^1.5.0",
-    "gas-test": "^0.5.1",
-    "gas-test-cli": "^0.6.0",
-    "gas-webpack-plugin": "^1.0.2",
-    "npm-run-all": "^4.1.5",
-    "ts-loader": "^6.2.2",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "@types/assert": "1.4.6",
+    "@types/google-apps-script": "1.0.11",
+    "assert": "2.0.0",
+    "cpx": "1.5.0",
+    "gas-test": "0.5.1",
+    "gas-test-cli": "0.6.0",
+    "gas-webpack-plugin": "1.0.2",
+    "npm-run-all": "4.1.5",
+    "ts-loader": "6.2.2",
+    "typescript": "3.8.3",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11"
   }
 }
