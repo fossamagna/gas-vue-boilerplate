@@ -2,6 +2,15 @@
 
 *Read this in other languages: [English](README.md), [日本語](README.ja.md).*
 
+Google Apps ScriptでWebアプリを開発するためのボイラープレートです。モダンな開発ツールを採用したローカル開発が可能です。
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Webpack](https://webpack.js.org/)
+- [Vue.js](https://jp.vuejs.org/)
+- [Vuetify](https://vuetifyjs.com/ja/)
+- [gas-test](https://github.com/fossamagna/gas-test)
+- CI/CD (GitHub Actoins)
+
 ## Getting Started
 
 ```sh

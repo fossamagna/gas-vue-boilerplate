@@ -2,6 +2,15 @@
 
 *Read this in other languages: [English](README.md), [日本語](README.ja.md).*
 
+This is a boilerplate for developing web apps with Google Apps Script. Local development with modern development tools is possible.
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Webpack](https://webpack.js.org/)
+- [Vue.js](https://vuejs.org/)
+- [Vuetify](https://vuetifyjs.com/en)
+- [gas-test](https://github.com/fossamagna/gas-test)
+- CI/CD (GitHub Actoins)
+
 ## Getting Started
 
 ```sh
