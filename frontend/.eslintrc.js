@@ -3,6 +3,9 @@ module.exports = {
   env: {
     node: true
   },
+  globals: {
+    google: "readonly"
+  },
   extends: [
     "plugin:vue/essential",
     "eslint:recommended",
@@ -13,6 +16,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020
   },
+  ignorePatterns: ["vue.config.js", "src/google.script.d.ts", "node_modules/"],
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",

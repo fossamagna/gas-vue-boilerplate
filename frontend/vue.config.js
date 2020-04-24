@@ -1,5 +1,5 @@
 const HtmlWebpackInlineSourcePlugin = require("html-webpack-inline-source-plugin");
-const svgToMiniDataURI = require('mini-svg-data-uri');
+const svgToMiniDataURI = require("mini-svg-data-uri");
 
 module.exports = {
   lintOnSave: true,
@@ -26,19 +26,19 @@ module.exports = {
         limit: 8192
       });
 
-    const svgRule = config.module.rule('svg')
+    const svgRule = config.module.rule("svg");
 
     // clear all existing loaders.
     // if you don't do this, the loader below will be appended to
     // existing loaders of the rule.
-    svgRule.uses.clear()
+    svgRule.uses.clear();
 
     // add replacement loader(s)
     svgRule
       .use("url-loader")
       .loader("url-loader")
       .options({
-        generator: (content) => svgToMiniDataURI(content.toString())
+        generator: content => svgToMiniDataURI(content.toString())
       });
   },
   configureWebpack: {
