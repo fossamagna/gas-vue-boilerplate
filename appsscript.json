@@ -3,6 +3,9 @@
   "dependencies": {
   },
   "exceptionLogging": "STACKDRIVER",
+  "executionApi": {
+    "access": "MYSELF"
+  },
   "runtimeVersion": "V8",
   "webapp": {
     "access": "MYSELF",

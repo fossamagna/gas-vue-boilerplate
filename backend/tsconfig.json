@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "lib": ["ES2018"],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
     "allowJs": false,
     "outDir": "./dist",
     "target": "es2018",
@@ -10,8 +14,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true
   },
-  "compileOnSave": true,
-  "rootDir": "src"
+  "compileOnSave": true
 }

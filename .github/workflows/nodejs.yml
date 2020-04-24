@@ -27,6 +27,18 @@ jobs:
     - run: yarn install
     - run: yarn lerna bootstrap
     - run: yarn build
+    - shell: bash
+      # update locally with:
+      # openssl aes-256-cbc -e -in ~/.clasprc.json -out ./.clasprc.json.enc -k $KEY
+      run: openssl aes-256-cbc -d -in .clasprc.json.enc -k $KEY > $HOME/.clasprc.json
+      env:
+        KEY: ${{ secrets.KEY }}
+    - shell: bash
+      # update locally with:
+      # openssl aes-256-cbc -e -in ./backend/gas-test-credentials.json -out ./backend/gas-test-credentials.json.enc -k $KEY
+      run: openssl aes-256-cbc -d -in ./backend/gas-test-credentials.json.enc -k $KEY > ./backend/gas-test-credentials.json
+      env:
+        KEY: ${{ secrets.KEY }}
     - run: yarn test
       env:
         CI: true

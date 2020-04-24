@@ -1,2 +1,4 @@
 node_modules/
 dist/
+gas-test-credentials.json
+.clasp.json
