@@ -4,6 +4,7 @@
   "description": "Google Apps Script Web App Boilerplate",
   "license": "MIT",
   "scripts": {
+    "init-repo": "node ./scripts/init-repo.js",
     "postinstall": "lerna bootstrap",
     "preclean": "lerna run clean",
     "clean": "rimraf dist",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@google/clasp": "^2.3.0",
     "cpx": "^1.5.0",
+    "fs-extra": "^9.0.0",
     "google-script-dts-generator": "^1.0.2",
     "lerna": "^3.20.2",
     "mkdirp": "^1.0.4",

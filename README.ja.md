@@ -7,8 +7,8 @@
 ```sh
 git clone https://github.com/fossamagna/gas-vue-boilerplate.git my-awesome-project
 cd my-awesome-project
-rm -rf .git && git init # gitリポジトリを初期化
 yarn # 依存モジュールをインストール
+yarn init-repo # gitリポジトリを初期化
 yarn clasp login # claspでログイン
 yarn clasp create --rootDir ./dist # Apps Scriptプロジェクトを作成
 yarn build # サンプルプトジェクトをビルド

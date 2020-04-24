@@ -7,8 +7,8 @@
 ```sh
 git clone https://github.com/fossamagna/gas-vue-boilerplate.git my-awesome-project
 cd my-awesome-project
-rm -rf .git && git init # Initialize your project's git repository
 yarn # Install dependencies
+yarn init-repo # Initialize your project's git repository
 yarn clasp login # Login to Google
 yarn clasp create --rootDir ./dist # Create an Apps Script project
 yarn deploy # Compile the example project and Push the compiled script to the server
