@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@types/assert/-/assert-1.4.6.tgz#deb4788a16621e39f28aab166fb62c3d79df24b9"
   integrity sha512-r/N9gGdYr2MfZSbdi6w6VH3+qS1KboBqZ0bkDiTD2RdAls3smYDK/jy8jhGyGTZglFgLTCknH1MBJG8M4sd+6A==
 
-"@types/google-apps-script@1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@types/google-apps-script/-/google-apps-script-1.0.12.tgz#1aa919434eaf550632a074a0bf3ea9c5c18c6139"
-  integrity sha512-Vrg53MAJy1nSDmfCBmQxeUYjwkqdcfjLilyf5UswzdZd/dy4IuPgdJZgtiQiINIidltxr+TT2XBV6O0CIQYWFQ==
+"@types/google-apps-script@1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@types/google-apps-script/-/google-apps-script-1.0.13.tgz#05a50cbc885cb0bf46a59c8b161de6120ab68356"
+  integrity sha512-xL5ZAkbXrYvwJmUIXiJWttb1umrVPqG3FC2G/Pxn2DMkCK/aBmz49oSUp9l5S6E1V89d70L40sV3G/rA9tnuiw==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
