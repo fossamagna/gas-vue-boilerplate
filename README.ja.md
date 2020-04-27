@@ -78,3 +78,22 @@ gas-testはApps Scriptの関数をリモートで実行します。
 10. `yarn test` でテストを実行する。
 
 詳細は以下を参照してください: https://github.com/fossamagna/gas-test-cli#usage
+
+## CI (GitHub Actions)
+
+GitHub ActionsからApps Scriptプロジェクトにプッシュし、Apps Script上でスクリプトを実行するには、アクセストークンが必要です。アクセストークンはプライベートである必要があります。そのため、リポジトリ内のコミットされたトークンは暗号化されている必要があります。
+
+アクセストークンファイルは以下のように暗号化することができます。
+
+```sh
+openssl aes-256-cbc -e -in ~/.clasprc.json -out ./.clasprc.json.enc -k $KEY
+openssl aes-256-cbc -e -in ./backend/gas-test-credentials.json -out ./backend/gas-test-credentials.json.enc -k $KEY
+```
+
+`$KEY` は暗号化と復号化のためのパスワードで、GitHub Actionsで暗号化されたアクセストークンを使ってファイルを復号化するために使われます。
+
+暗号化されたアクセストークンファイルは、リポジトリにコミットする必要があります。
+
+**上記コマンドを実行する前にアクセストークンを取得する必要があります。アクセストークンを取得するには、`clasp login` と `yarn gas-test auth` を実行します。**
+
+GitHub Actionsが使用する`$KEY`を設定します。設定方法は[暗号化されたシークレットの作成](https://help.github.com/ja/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets)を参照してください。

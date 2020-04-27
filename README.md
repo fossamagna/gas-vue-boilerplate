@@ -78,3 +78,22 @@ The step-by-step information on how to use gas-test run is available below:
 10. `yarn test` to execute tests.
 
 See below for more information: https://github.com/fossamagna/gas-test-cli#usage
+
+## CI (GitHub Actions)
+
+In order to push from GitHub Actions to an Apps Script project and run the script on Apps Script, you need an evaluation token. The access token must be private. So, committed tokens in the repository must be encrypted.
+
+The access token files can be encrypted as follows:
+
+```sh
+openssl aes-256-cbc -e -in ~/.clasprc.json -out ./.clasprc.json.enc -k $KEY
+openssl aes-256-cbc -e -in ./backend/gas-test-credentials.json -out ./backend/gas-test-credentials.json.enc -k $KEY
+```
+
+`$KEY` is the password for encryption and decryption, which is also used by GitHub Actions to decrypt files with an encrypted access token.
+
+The encrypted access token files should be committed to the repository.
+
+**You need to get an access token before executing the above command. To get the access token, run `clasp login` and `yarn gas-test auth`.**
+
+Set the $KEY that GitHub Actions will use. See the [Creating encrypted secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets#creating-encrypted-secrets) for instructions on how to set it up.
