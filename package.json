@@ -25,7 +25,7 @@
     "cpx": "1.5.0",
     "fs-extra": "9.0.0",
     "google-script-dts-generator": "1.0.2",
-    "lerna": "3.20.2",
+    "lerna": "3.21.0",
     "mkdirp": "1.0.4",
     "npm-run-all": "4.1.5",
     "rimraf": "3.0.2"
