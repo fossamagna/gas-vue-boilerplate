@@ -19,7 +19,7 @@
     "test": "npm-run-all cp:* test:*"
   },
   "devDependencies": {
-    "@types/assert": "1.4.6",
+    "@types/assert": "1.4.7",
     "@types/google-apps-script": "1.0.14",
     "assert": "2.0.0",
     "cpx": "1.5.0",
