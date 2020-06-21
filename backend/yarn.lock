@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@types/assert@1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@types/assert/-/assert-1.4.7.tgz#8add0d031e16e7ad87282f1b55c30813b4632cbd"
-  integrity sha512-CcLrcLy+7tWiGCXsWht6boJeTfq7I9uO0trcw2ohLfIXsG6N+OMfsfjIxIE51tfijUbnPQvqBUCwYDGinE+V2g==
+"@types/assert@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@types/assert/-/assert-1.5.0.tgz#e2336b9faba9fa5841cc21afb4bca8ab7ac71c59"
+  integrity sha512-JcDLh+ALOaA9GTS6pemkrt3fTcnllo/DvDpgtfhDtfrALo5FmRaFBrQrQ6YqSw1N6fuYGYDnaihlVW9a/+38Lg==
 
 "@types/google-apps-script@1.0.14":
   version "1.0.14"
