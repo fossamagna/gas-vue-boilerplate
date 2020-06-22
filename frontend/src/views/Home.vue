@@ -4,12 +4,15 @@
 
 <script>
 // @ is an alias to /src
+import { defineComponent } from "@vue/composition-api";
 import HelloWorld from "@/components/HelloWorld.vue";
 
-export default {
+export default defineComponent({
   name: "Home",
   components: {
     HelloWorld
+  },
+  setup() {
   }
-};
+});
 </script>
