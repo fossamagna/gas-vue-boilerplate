@@ -20,8 +20,8 @@ yarn # 依存モジュールをインストール
 yarn init-repo # gitリポジトリを初期化
 yarn clasp login # claspでログイン
 yarn clasp create --rootDir ./dist # Apps Scriptプロジェクトを作成
-yarn build # サンプルプトジェクトをビルド
-yarn push # ビルドされたスクリプトをpush
+yarn deploy # サンプルプトジェクトをビルドし、ビルドされたスクリプトをpush
+yarn clasp open --webapp # BrowserでWebアプリを開く
 ```
 
 ## テスト
