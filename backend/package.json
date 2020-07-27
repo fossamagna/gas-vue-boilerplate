@@ -25,7 +25,7 @@
     "cpx": "1.5.0",
     "gas-test": "0.5.1",
     "gas-test-cli": "0.6.0",
-    "gas-webpack-plugin": "1.0.3",
+    "gas-webpack-plugin": "1.0.4",
     "npm-run-all": "4.1.5",
     "ts-loader": "8.0.1",
     "typescript": "3.9.7",
