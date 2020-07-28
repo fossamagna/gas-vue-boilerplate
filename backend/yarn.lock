@@ -1570,10 +1570,10 @@ gas-test@0.5.1:
   resolved "https://registry.yarnpkg.com/gas-test/-/gas-test-0.5.1.tgz#407bf8e661e26a248744dd8141e8103090bdf0cf"
   integrity sha512-NIP7h16xxDad1mQ7dlsMNR4fedLyIRZUIVnQGTyL+yxXP+Ckk+miAaefmcqBJUvbJcXADGZmy21pNyi+AawNQQ==
 
-gas-webpack-plugin@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/gas-webpack-plugin/-/gas-webpack-plugin-1.0.3.tgz#9c5af2e4456228451607bd48674e33f53e228dcd"
-  integrity sha512-JVGdkBeVNYakMc63bSWic+fCHBng2E8+yRGhM0RxOF3PKQNqHmtLD83Ggr+vdxyQ+SPK6KAB2xTvBHcckEIK/g==
+gas-webpack-plugin@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gas-webpack-plugin/-/gas-webpack-plugin-1.0.4.tgz#d4f2dc0ce8e3799bebd822150302040fb44c9761"
+  integrity sha512-+qFp+Xo0eOAXHynH9iQjFiHp39DYxrIIwNttXUTPo1f2uFJllFfY53+Fiv8Ef3HignD4n7fkiu0zppMGzvqiGw==
   dependencies:
     gas-entry-generator "1.1.2"
 
