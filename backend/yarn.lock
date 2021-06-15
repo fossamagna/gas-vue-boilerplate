@@ -1251,13 +1251,13 @@ escodegen@1.10.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-escodegen@1.14.3:
-  version "1.14.3"
-  resolved "https://registry.yarnpkg.com/escodegen/-/escodegen-1.14.3.tgz#4e7b81fba61581dc97582ed78cab7f0e8d63f503"
-  integrity sha512-qFcX0XJkdg+PB3xjZZG/wKSuT1PnQWx57+TVSjIMmILd2yC/6ByYElPwJnslDsuWuSAp4AwJGumarAAmJch5Kw==
+escodegen@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/escodegen/-/escodegen-2.0.0.tgz#5e32b12833e8aa8fa35e1bf0befa89380484c7dd"
+  integrity sha512-mmHKys/C8BFUGI+MAWNcSYoORYLMdPzjrknd2Vc+bUsjN5bXcr8EhrNB+UTqfL1y3I9c4fw2ihgtMPQLBRiQxw==
   dependencies:
     esprima "^4.0.1"
-    estraverse "^4.2.0"
+    estraverse "^5.2.0"
     esutils "^2.0.2"
     optionator "^0.8.1"
   optionalDependencies:
@@ -1293,10 +1293,10 @@ estraverse@4.2.0:
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
   integrity sha1-De4/7TH81GlhjOc0IJn8GvoL2xM=
 
-estraverse@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.1.0.tgz#374309d39fd935ae500e7b92e8a6b4c720e59642"
-  integrity sha512-FyohXK+R0vE+y1nHLoBM7ZTyqRpqAlhdZHCWIWEviFLiGB8b04H6bQs8G+XTthacvT8VuwvteiP7RJSxMs8UEw==
+estraverse@5.2.0, estraverse@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.2.0.tgz#307df42547e6cc7324d3cf03c155d5cdb8c53880"
+  integrity sha512-BxbNGGNm0RyRYvUdHpIwv9IWzeM9XClbOxwoATuFdOE7ZE6wHL+HQ5T8hoPM+zHvmKzzsEqhgy0GrQ5X13afiQ==
 
 estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.3.0"
@@ -1582,14 +1582,14 @@ gas-entry-generator@1.1.0:
     esprima "4.0.1"
     estraverse "4.2.0"
 
-gas-entry-generator@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/gas-entry-generator/-/gas-entry-generator-1.1.2.tgz#52fd86660f9d12263e64da7a26bb9e6df1bc52a4"
-  integrity sha512-OH5HTs9AfwA59hkZVniqzrYypm5fmtUT9JoHXBoH/qBKBrwhofnbcSjBIlhHgociDePEHC7q6HGC0i/QgGqYpw==
+gas-entry-generator@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gas-entry-generator/-/gas-entry-generator-2.1.0.tgz#f35557de34fcab15ca0201d639b2246e1cf4e9b7"
+  integrity sha512-IjbVuMjXlRP1zIJJGgSyOb5SjlVxnAdtLDp+aCdXNuZBg7OuD10WVtkJSCcf33VXcPe4AqWb8z+ucsXZMClsAA==
   dependencies:
-    escodegen "1.14.3"
+    escodegen "2.0.0"
     esprima "4.0.1"
-    estraverse "5.1.0"
+    estraverse "5.2.0"
 
 gas-test-cli@0.6.0:
   version "0.6.0"
@@ -1612,12 +1612,14 @@ gas-test@0.5.1:
   resolved "https://registry.yarnpkg.com/gas-test/-/gas-test-0.5.1.tgz#407bf8e661e26a248744dd8141e8103090bdf0cf"
   integrity sha512-NIP7h16xxDad1mQ7dlsMNR4fedLyIRZUIVnQGTyL+yxXP+Ckk+miAaefmcqBJUvbJcXADGZmy21pNyi+AawNQQ==
 
-gas-webpack-plugin@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/gas-webpack-plugin/-/gas-webpack-plugin-1.0.4.tgz#d4f2dc0ce8e3799bebd822150302040fb44c9761"
-  integrity sha512-+qFp+Xo0eOAXHynH9iQjFiHp39DYxrIIwNttXUTPo1f2uFJllFfY53+Fiv8Ef3HignD4n7fkiu0zppMGzvqiGw==
+gas-webpack-plugin@1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/gas-webpack-plugin/-/gas-webpack-plugin-1.2.3.tgz#6657016b0f891da7b6942766c072db4fbd053780"
+  integrity sha512-IWssjeNBFbcDfGAYLplr6Sm3hBiye3YHv4kObl5xlLWyQjpKLnhLDAaf73TG7UjvyFutIm4Xt31fAROSmPj1+g==
   dependencies:
-    gas-entry-generator "1.1.2"
+    gas-entry-generator "2.1.0"
+    minimatch "^3.0.4"
+    webpack-sources "^1.4.3"
 
 gasify@1.0.0:
   version "1.0.0"
@@ -4012,7 +4014,7 @@ webpack-cli@3.3.12:
     v8-compile-cache "^2.1.1"
     yargs "^13.3.2"
 
-webpack-sources@^1.4.0, webpack-sources@^1.4.1:
+webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"
   integrity sha512-lgTS3Xhv1lCOKo7SA5TjKXMjpSM4sBjNV5+q2bqesbSPs5FjGmU6jjtBSkX9b4qW87vDIsCIlUPOEhbZrMdjeQ==
