@@ -21,7 +21,7 @@
     "deploy": "npm-run-all build upload"
   },
   "devDependencies": {
-    "@google/clasp": "2.3.0",
+    "@google/clasp": "3.2.0",
     "cpx": "1.5.0",
     "fs-extra": "9.0.1",
     "google-script-dts-generator": "1.0.2",
